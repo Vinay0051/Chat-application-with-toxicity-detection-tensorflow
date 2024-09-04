@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./static/css/global.css" />
+  <link rel="stylesheet" href="./static/css/login.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend Giga:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ek Mukta:wght@400;600&display=swap" />
+</head>
+<body>
+  <div class="login1">
+    <div class="rectangle-parent2">
+      <div class="group-child9"></div>
+      <div class="credentials-parent">
+        <div class="credentials">
+          <input
+            class="username1"
+            name="Username"
+            id="UN"
+            placeholder="Username"
+            type="text"
+            maxlength="30"
+            minlength="10"
+          />
+
+          <input
+            class="password1"
+            name="Password"
+            id="PWD"
+            placeholder="Password"
+            type="password"
+            maxlength="30"
+            minlength="10"
+          />
+        </div>
+        <button class="login2" onclick="loginClicked()">
+          <div class="login-child"></div>
+          <b class="login3">Login</b>
+          <div class="dont-have-an">Don’t have an account?</div>
+          <a class="signup3" href="./signup.html" id="signup">Signup</a>
+        </button>
+        <div class="log-in">Log In</div>
+      </div>
+    </div>
+    <img class="group-icon1" alt="" src="./static/images/group1.svg" />
+  </div>
+
+  <script>
+    function loginClicked() {
+      var username = document.getElementById("UN").value;
+      var password = document.getElementById("PWD").value;
+
+      // Send an AJAX request to the Flask server
+      fetch("/validate_credentials", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
+          username: username,
+          password: password
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Process the response from the server as needed
+        if (data.status === "success") {
+          alert("Login successful! Redirecting to welcome page...");
+          window.location.href = "./welcome.html";
+        } else {
+          alert("Invalid credentials. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    }
+
+    var signup = document.getElementById("signup");
+    if (signup) {
+      signup.addEventListener("click", function (e) {
+        window.location.href = "./signup.html";
+      });
+    }
+  </script>
+</body>
+</html>

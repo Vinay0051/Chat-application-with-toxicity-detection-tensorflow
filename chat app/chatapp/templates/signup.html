@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend Giga:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ek Mukta:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="signup">
+      <div class="rectangle-parent1">
+        <div class="group-child8"></div>
+        <div class="signup-page">
+          <input
+            class="email"
+            name="Email address"
+            id="EID"
+            placeholder="Email address"
+            type="email"
+            maxlength="30"
+            minlength="10"
+          />
+
+          <input
+            class="username"
+            name="username"
+            id="UID"
+            placeholder="Username"
+            type="text"
+          />
+
+          <input
+            class="password"
+            name="Password"
+            id="PWds"
+            placeholder="Password"
+            type="password"
+            maxlength="30"
+            minlength="10"
+          />
+
+          <input
+            class="full-name"
+            name="Full Name"
+            id="FN"
+            placeholder="Full Name"
+            type="text"
+            maxlength="30"
+            minlength="10"
+          />
+
+          <div class="user-parent">
+            <a class="user" id="Login" href="./login.html">
+              <a class="login" id="lid">Login</a>
+              <div class="user-child"></div>
+              <div class="have-an-account">Have an account?</div>
+            </a>
+            <button class="signup1" autofocus="{true}" id="Signup" onclick="signupClicked()" style="margin-top: -50px;">
+              <div class="signup-child"></div>
+              <b class="signup2">Signup</b>
+            </button>
+          </div>
+          <div class="sign-up">Sign Up</div>
+        </div>
+      </div>
+      <img class="group-icon" alt="" src="./static/images/group.svg" />
+    </div>
+
+    <script>
+      function signupClicked() {
+        console.log("Signup button clicked!");
+        var email = document.getElementById("EID").value;
+        var username = document.getElementById("UID").value;
+        var password = document.getElementById("PWds").value;
+        var fullName = document.getElementById("FN").value;
+
+        // Create an object with the entered credentials
+        var userCredentials = {
+          email: email,
+          username: username,
+          password: password,
+          fullName: fullName
+        };
+
+        // Send an AJAX request to the Flask server
+        fetch("/store_credentials", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(userCredentials)
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // Process the response from the server as needed
+          if (data.status === "success") {
+            alert("Signup successful! Redirecting to login page...");
+            window.location.href = "./login.html";
+          } else {
+            alert("Error occurred. Please try again.");
+          }
+        })
+        .catch(error => {
+          console.error(error);
+        });
+      }
+    </script>
+  </body>
+</html>

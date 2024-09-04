@@ -1,0 +1,193 @@
+.email,
+.group-child8 {
+  background-color: var(--color-white);
+}
+.group-child8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 799px;
+  height: 1037px;
+}
+.email {
+  top: 176px;
+  left: calc(50% - 298.35px);
+  width: 546px;
+  height: 67px;
+}
+.email,
+.full-name,
+.password,
+.username {
+  border: 2px solid var(--color-black);
+  font-family: var(--font-lexend-giga);
+  font-size: var(--font-size-5xl);
+  position: absolute;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xs);
+}
+.username {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 332px;
+  left: calc(50% - 297.35px);
+  width: 545px;
+  height: 66px;
+}
+.full-name,
+.password {
+  background-color: var(--color-white);
+  top: 407px;
+  left: calc(50% - 298.35px);
+  width: 546px;
+  height: 67px;
+}
+.full-name {
+  background-color: var(--color-gray-200);
+  top: 259px;
+  height: 62px;
+}
+.login {
+  text-decoration: none;
+  position: absolute;
+  top: 95px;
+  left: 180px;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  width: 105px;
+  height: 34px;
+  cursor: pointer;
+}
+.user-child {
+  position: absolute;
+  top: 33.5px;
+  left: 15.5px;
+  border-top: 1px solid var(--color-deepskyblue);
+  box-sizing: border-box;
+  width: 73.1px;
+  height: 1px;
+}
+.have-an-account {
+  position: absolute;
+  top: 90px;
+  left: -30.5px;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-black);
+  display: inline-block;
+  width: 237px;
+  height: 36px;
+}
+.user {
+  text-decoration: none;
+  position: absolute;
+  top: 86.5px;
+  left: 241.8px;
+  width: 237.2px;
+  height: 45.9px;
+  color: inherit;
+}
+.signup-child {
+  cursor: pointer;
+  border: 2px solid var(--color-white);
+  padding: 0;
+  background-color: var(--blue-1);
+  position: relative;
+  top:40px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 209px;
+  height: 49px;
+}
+.signup2 {
+  position: relative;
+  font-size: 28px;
+  display: inline-block;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+  left:-190px;
+  top:25px;
+  width: 154px;
+  height: 52px;
+  flex-shrink: 0;
+  margin-top: -47px;
+}
+.signup1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 0 var(--padding-8xs);
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 160.5px);
+  width: 154px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.sign-up,
+.user-parent {
+  position: absolute;
+  top: 492.6px;
+  left: 121.7px;
+  width: 479px;
+  height: 132.4px;
+}
+.sign-up {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-41xl);
+  font-weight: 600;
+  font-family: var(--font-ek-mukta);
+  color: var(--color-black);
+  display: inline-block;
+  width: 506px;
+  height: 141px;
+}
+.signup-page {
+  position: absolute;
+  top: 203px;
+  left: calc(50% - 280.5px);
+  width: 600.7px;
+  height: 625px;
+}
+.group-icon,
+.rectangle-parent1 {
+  position: absolute;
+  top: 0;
+  left: 641px;
+  width: 799px;
+  height: 1037px;
+}
+.group-icon {
+  height: 139.73%;
+  width: 69.01%;
+  right: 30.99%;
+  bottom: -39.73%;
+  left: -180px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+  mix-blend-mode: luminosity;
+}
+.signup {
+  position: relative;
+  background-color: var(--blue-1);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-deepskyblue);
+  font-family: var(--font-eczar);
+}

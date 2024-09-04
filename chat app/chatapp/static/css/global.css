@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-lexend-giga: "Lexend Giga";
+  --font-poppins: Poppins;
+  --font-ek-mukta: "Ek Mukta";
+  --font-eczar: Eczar;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-77xl: 96px;
+  --font-size-smi-5: 12.5px;
+  --font-size-mini-9: 14.9px;
+  --font-size-xs-6: 11.6px;
+  --font-size-3xs: 10px;
+  --font-size-mini-8: 14.8px;
+  --font-size-mid-4: 17.4px;
+  --font-size-sm-1: 13.1px;
+  --font-size-xs-2: 11.2px;
+  --font-size-base-8: 16.8px;
+  --font-size-smi-2: 12.2px;
+  --font-size-mini-2: 14.2px;
+  --font-size-41xl: 60px;
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-white: #fff;
+  --blue-1: #2f80ed;
+  --color-black: #000;
+  --color-darkslateblue-100: #2b2a6c;
+  --color-text-2: #21205a;
+  --text-primary: #1b1a57;
+  --color-midnightblue-100: #151448;
+  --text-secondary: #4f5e7b;
+  --color-lawngreen: #4ce417;
+  --yellow: #f2c94c;
+  --color-darkslategray: #333;
+  --color-silver: #bdbdbd;
+  --color-whitesmoke-100: #f9f9f9;
+  --color-whitesmoke-200: #f7f7f7;
+  --color-lightsteelblue: #a1a1bc;
+  --orange: #f2994a;
+  --color-deepskyblue: #00bfff;
+  --color-gray-100: rgba(0, 0, 0, 0.9);
+  --color-gray-200: rgba(255, 255, 255, 0.5);
+
+  /* Gaps */
+  --gap-3xl-4: 22.4px;
+  --gap-4xs-3: 8.3px;
+
+  /* Paddings */
+  --padding-3xs-9: 9.9px;
+  --padding-smi-3: 12.3px;
+  --padding-8xs: 5px;
+  --padding-9xs-7: 3.7px;
+  --padding-5xs-5: 7.5px;
+  --padding-3xs: 10px;
+  --padding-sm-3: 13.3px;
+  --padding-6xs-6: 6.6px;
+  --padding-4xs-3: 8.3px;
+  --padding-2xs: 11px;
+
+  /* Border radiuses */
+  --br-sm-3: 13.3px;
+  --br-10xl-9: 29.9px;
+  --br-11xs-1: 1.1px;
+  --br-10xs-2: 2.2px;
+  --br-6xs-6: 6.6px;
+  --br-3xs: 10px;
+  --br-7xs-2: 5.2px;
+  --br-12xl: 31px;
+  --br-10xl-6: 29.6px;
+  --br-3xs-9: 9.9px;
+  --br-14xl-5: 33.5px;
+  --br-mini-9: 14.9px;
+  --br-6xl-2: 25.2px;
+  --br-179xl-1: 198.1px;
+  --br-9xs-7: 3.7px;
+  --br-74xl-2: 93.2px;
+  --br-lgi-9: 19.9px;
+  --br-3xl-4: 22.4px;
+  --br-mid-4: 17.4px;
+  --br-4xs-1: 8.1px;
+  --br-8xl-4: 27.4px;
+  --br-157xl-4: 176.4px;
+}

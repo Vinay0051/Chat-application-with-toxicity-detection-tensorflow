@@ -1,0 +1,159 @@
+.group-child9,
+.password1,
+.username1 {
+  position: absolute;
+  border-radius: var(--br-3xs);
+}
+.group-child9 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 790px;
+  height: 1034px;
+}
+.password1,
+.username1 {
+  border: 2px solid var(--color-gray-100);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-5xl);
+  background-color: var(--color-gray-200);
+  box-sizing: border-box;
+  width: 393px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.username1 {
+  top: 0;
+  left: calc(50% - 181.5px);
+  align-items: center;
+  padding: 0 12.581683158874512px;
+}
+.password1 {
+  top: 105px;
+  left: -51px;
+  align-items: flex-start;
+  padding: 20px 12px 19px;
+}
+.credentials,
+.login-child {
+  position: absolute;
+  top: 6px;
+  left: 49px;
+  width: 261px;
+  height: 159px;
+}
+.login-child {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--blue-1);
+  top: 219px;
+  left: 55px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 242px;
+  height: 48px;
+}
+.dont-have-an,
+.login3,
+.signup3 {
+  text-align: center;
+  display: inline-block;
+}
+.login3 {
+  position: absolute;
+  top: 221px;
+  left: 134.5px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  width: 85.1px;
+  height: 23.5px;
+}
+.dont-have-an,
+.signup3 {
+  top: 280px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-eczar);
+}
+.dont-have-an {
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: var(--color-black);
+  width: 270px;
+  height: 36px;
+}
+.signup3 {
+  text-decoration: none;
+  left: 220px;
+  font-weight: 700;
+  color: var(--color-deepskyblue);
+  width: 113px;
+  height: 34px;
+  cursor: pointer;
+}
+.log-in,
+.login2,
+.signup3 {
+  position: absolute;
+}
+.login2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 221px;
+  left: 0;
+  width: 333px;
+  height: 100px;
+}
+.log-in {
+  top: -144px;
+  left: -6px;
+  font-weight: 600;
+  display: inline-block;
+  width: 394px;
+  height: 146px;
+}
+.credentials-parent {
+  position: absolute;
+  top: 351px;
+  left: 201px;
+  width: 333px;
+  height: 321px;
+}
+.group-icon1,
+.rectangle-parent2 {
+  position: absolute;
+  top: 0;
+  left: 650px;
+  width: 790px;
+  height: 1034px;
+}
+.group-icon1 {
+  height: 138.85%;
+  width: 66.44%;
+  right: 33.56%;
+  bottom: -38.85%;
+  left: -100px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+  mix-blend-mode: luminosity;
+}
+.login1 {
+  position: relative;
+  background-color: var(--blue-1);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-41xl);
+  color: var(--color-black);
+  font-family: var(--font-ek-mukta);
+}

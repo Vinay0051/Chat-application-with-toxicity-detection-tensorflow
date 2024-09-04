@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Report</title>
+    <style>
+        body {
+            background-color: #3498db; /* Lightened background color */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+            font-size: 40px;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-bottom: 60px; /* Increased margin to allow for magnification on hovering */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #2980b9; /* Adjusted container color */
+        }
+
+        .container img {
+            width: 45%;
+            margin-top: 40px; /* Increased space above the images within the container */
+            border-radius: 15px;
+            border: 10px solid transparent;
+            border-image: linear-gradient(to bottom right, #3498db, #2ecc71);
+            border-image-slice: 1;
+        }
+
+        .container img:hover {
+            transform: scale(1.05);
+        }
+
+        .text-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px; /* Increased margin to allow for magnification on hovering */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #2980b9; /* Adjusted container color */
+        }
+
+        .text {
+            color: white;
+            text-align: center;
+            width: 70%;
+            margin: 40px auto; /* Increased space above the text */
+            font-size: 24px; /* Increased text size */
+        }
+
+        .bottom-space {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conversation Report</h1>
+
+    <div class="container">
+        <img src="./static/images/combined_histogram.png"
+        alt="Combined Histogram">
+    </div>
+
+    <div class="text-container">
+        <p class="text">The given graph shows the polarity scores for the categories toxic, threat, identity_hate, insult, obscene and severe toxic 
+            The threshold for the given polarity scores is 0.5, values higher than 0.5 suggest that they lean towards threat.</p>
+    </div>
+
+    <div class="container">
+        <img src="./static/images/user0.png" alt="User 1">
+        <img src="./static/images/user1.png" alt="User 2">
+    </div>
+
+    <div class="bottom-space"></div>
+</body>
+
+</html>
